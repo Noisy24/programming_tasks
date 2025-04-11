@@ -24,6 +24,8 @@ public class Main {
 //        }
 //        System.out.println("Общая площадь - " + sumOfArea(circles));
 
+        int num = 10;
+
 
         Random r = new Random();
         Treg_Ravn[] tregs = new Treg_Ravn[r.nextInt(10, 31)];
