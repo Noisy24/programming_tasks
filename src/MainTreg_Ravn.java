@@ -25,12 +25,12 @@ public class MainTreg_Ravn {
     public static double sum_minmax(Treg_Ravn[] tregs) {
         double min = 1000;
         double max = 0;
-        for (int i = 0; i < tregs.length; i++) {
-            if (min > tregs[i].getPerimetr()) {
-                min = tregs[i].getPerimetr();
+        for (Treg_Ravn treg : tregs) {
+            if (min > treg.getPerimetr()) {
+                min = treg.getPerimetr();
             }
-            if (max < tregs[i].getPerimetr()) {
-                max = tregs[i].getPerimetr();
+            if (max < treg.getPerimetr()) {
+                max = treg.getPerimetr();
             }
         }
         return min + max;
@@ -38,8 +38,8 @@ public class MainTreg_Ravn {
 
     public static double sumOfArea(Treg_Ravn[] tregs) {
         double sum = 0;
-        for (int i = 0; i < tregs.length; i++) {
-            sum += tregs[i].getArea();
+        for (Treg_Ravn treg : tregs) {
+            sum += treg.getArea();
         }
         return sum;
     }
